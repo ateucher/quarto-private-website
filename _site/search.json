@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "quarto-private-website",
+    "section": "",
+    "text": "This is a Quarto website template with password protection, using the staticryptR package.\nThis will encrypt the rendered website and put it behind a simple password prompt. It does not encrypt the source files, they will still be visible if they are in a public repository, so this is likely most useful if the source files are in a private repository but GitHub pages is set to be public (e.g., for GitHub Enterprise Cloud users).\nUsing staticryptR requires Node and the staticrypt Node library to be installed on your computer:\n\nInstall Node for your operating system.\n\nIn R:\n\nInstall staticryptR\ninstall.packages(\"staticryptR\")\nRun the following to install the staticrypt Node library:\nstaticrytR::install_staticrypt()\n\nencrypt.R contains the script that will do the encryption. Set options and your password in that file (again note that this file will be visible if your repo is public). This script will be run automatically when the site is rendered by quarto render or quarto preview - it is specified in the post-render paramater in _quarto.yml.\nBy default this template stores and encripts the rendered site in the _site/ directory."
+  }
+]
