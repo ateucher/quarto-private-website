@@ -27,3 +27,12 @@ In R:
     ```
     staticrytR::install_staticrypt()
     ```
+
+`encrypt.R` contains the script that will do the encryption. Set options and 
+your password in that file (again note that this file will be visible if your 
+repo is public). This script will be run automatically when the site is rendered
+by `quarto render` or `quarto preview` - it is specified in the `post-render` 
+paramater in `_quarto.yml`.
+
+By default this template stores and encripts the rendered site in the `docs/`
+directory.
