@@ -37,4 +37,7 @@ by `quarto render` or `quarto preview` - it is specified in the `post-render`
 paramater in `_quarto.yml`.
 
 By default this template stores and encripts the rendered site in the `docs/`
-directory.
+directory in the main branch. To render to the `gh-pages` branch and publish
+via a GitHub action, see the (currently in-progress) example at
+[ateucher/quarto-private-test1](https://github.com/ateucher/quarto-private-test1), 
+documentation for publishing on the [quarto website](https://quarto.org/docs/publishing/github-pages.html#github-action).
