@@ -15,8 +15,11 @@ if (isTRUE(staticryptR::check_system())) {
 staticryptR::staticryptr(
   files = "docs/",
   directory = ".",
-  password = "anicelongpassword",
-  short = FALSE, # set to TRUE if you want to use a short password
+  # set an explicit password if you don't mind collaborators seeing it,
+  # otherwise leave it NULL and set it in the _environment.local file as
+  # STATICRYPT_PASSWORD=<your_password>
+  password = NULL,
+  short = TRUE, # set to FALSE if you want to enforce a longer password
   recursive = TRUE,
   template_color_primary = "#6667AB",
   template_color_secondary = "#f9f9f3",
