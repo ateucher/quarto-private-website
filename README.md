@@ -8,7 +8,11 @@ prompt. It does not encrypt the source files -- they will still be visible if
 they are in a public repository -- so this is likely most useful if the source
 files are in a private repository but GitHub pages is set to be public (e.g.,
 for [GitHub Enterprise Cloud
-users](https://docs.github.com/en/enterprise-cloud@latest/pages/getting-started-with-github-pages/changing-the-visibility-of-your-github-pages-site)).
+users](https://docs.github.com/en/enterprise-cloud@latest/pages/getting-started-with-github-pages/changing-the-visibility-of-your-github-pages-site)),
+GitHub Pro, and GitHub Team. With [GitHub
+Free](https://docs.github.com/en/get-started/learning-about-github/githubs-plans)
+(personal and organizations) it is not possible to publish a GitHub Pages
+website from a private repository
 
 Using staticryptR requires Node and the
 [staticrypt](https://github.com/robinmoisson/staticrypt) Node library to be
