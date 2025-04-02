@@ -34,8 +34,18 @@ repo is public). This script will be run automatically when the site is rendered
 by `quarto render` or `quarto preview` - it is specified in the `post-render` 
 paramater in `_quarto.yml`.
 
+After it is rendered, when you visit your site it will present you with a 
+password prompt:
+
+![Screenshot of a window prompting for a passward](password-page.png)
+
+Enter the password. `staticrypt` encrpyts each page individually, which means
+you will need to enter your password each time you visit each page on the site,
+which can become tedious. If you click the "remember me" checkbox, it will
+avoid you having to do this.
+
 By default this template stores and encripts the rendered site in the `docs/`
 directory in the main branch. To render to the `gh-pages` branch and publish
-via a GitHub action, see the (currently in-progress) example at
-[ateucher/quarto-private-test1](https://github.com/ateucher/quarto-private-test1), 
-documentation for publishing on the [quarto website](https://quarto.org/docs/publishing/github-pages.html#github-action).
+via a GitHub action, without needing to install Node on your computer, see the
+repository template at 
+[ateucher/quarto-private-github-actions](https://github.com/ateucher/quarto-private-gh-actions).
